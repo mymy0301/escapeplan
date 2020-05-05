@@ -552,7 +552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3565573648776178886
 Transform:
   m_ObjectHideFlags: 0
@@ -560,14 +560,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3565573648776178891}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.757, y: 0.85, z: 0.081}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.697, y: 0.85, z: 4.73}
   m_LocalScale: {x: 0.14899, y: 0.7991079, z: 0.14899}
   m_Children:
   - {fileID: 3565573649116787141}
   m_Father: {fileID: 7907286916874500189}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &3565573648776178887
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 0
-    Duration: 3
+    Duration: 6
     TimeUpdateMethod: 0
     TransitionType: 22
     AnimationCurve:
@@ -674,7 +674,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    LoopMode: 1
+    LoopMode: 2
     OnTransitionStart:
       m_PersistentCalls:
         m_Calls: []
@@ -741,7 +741,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   RotationMode: 1
   InConfig:
-    StartRotation: {x: 0, y: 360, z: 0}
+    StartRotation: {x: 0, y: -135, z: 0}
   OutConfig:
     EndRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &3565573649117146593

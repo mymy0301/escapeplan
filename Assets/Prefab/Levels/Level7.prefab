@@ -350,9 +350,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -409,9 +409,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -823,9 +823,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -882,9 +882,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1071,9 +1071,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1130,9 +1130,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1319,9 +1319,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1378,9 +1378,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1662,9 +1662,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -1721,9 +1721,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -6423,9 +6423,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:
@@ -6482,9 +6482,9 @@ MonoBehaviour:
     TransitionChildren: 0
     MustTriggerDirect: 0
     Delay: 1
-    Duration: 0.5
+    Duration: 1
     TimeUpdateMethod: 0
-    TransitionType: 23
+    TransitionType: 22
     AnimationCurve:
       serializedVersion: 2
       m_Curve:

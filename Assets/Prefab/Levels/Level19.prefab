@@ -4266,7 +4266,7 @@ MonoBehaviour:
   pathMode: 1
   easeType: 1
   lockPosition: 0
-  lockRotation: 0
+  lockRotation: 2
   waypointRotation: 0
   rotationTarget: {fileID: 0}
 --- !u!136 &8526348429732423626
@@ -5515,11 +5515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5704,11 +5704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5793,11 +5793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5949,7 +5949,7 @@ PrefabInstance:
     - target: {fileID: 8174533764747673013, guid: bbde549501b0c5749bba8a1398d6194b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.51
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8174533766254986861, guid: bbde549501b0c5749bba8a1398d6194b,
         type: 3}
@@ -5964,7 +5964,7 @@ PrefabInstance:
     - target: {fileID: 8174533766254986861, guid: bbde549501b0c5749bba8a1398d6194b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.77
+      value: 4.69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbde549501b0c5749bba8a1398d6194b, type: 3}

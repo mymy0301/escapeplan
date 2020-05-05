@@ -3129,7 +3129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5742519753986253110
 Transform:
   m_ObjectHideFlags: 0
@@ -3138,7 +3138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5742519753986253109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.36, y: 0.85, z: 0.06}
+  m_LocalPosition: {x: 0.03, y: 0.85, z: 0.06}
   m_LocalScale: {x: 0.14899, y: 0.7991079, z: 0.14899}
   m_Children:
   - {fileID: 5742519755524138216}
@@ -3251,7 +3251,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    LoopMode: 2
+    LoopMode: 1
     OnTransitionStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3299,7 +3299,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    LoopMode: 0
+    LoopMode: 1
     OnTransitionStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3318,7 +3318,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   RotationMode: 1
   InConfig:
-    StartRotation: {x: 0, y: -180, z: 0}
+    StartRotation: {x: 0, y: 360, z: 0}
   OutConfig:
     EndRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &5742519754561842634

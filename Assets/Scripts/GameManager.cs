@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         GameOverUI.SetActive(false);
         GameWinUI.SetActive(false);
         Level = PlayerPrefs.GetInt("Level", 0);
-        //Level = 2;
+        //Level = 19;
         if (Level > Levels.Length - 1) {
             Level = Levels.Length - 1;
         }

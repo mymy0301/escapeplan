@@ -4265,7 +4265,7 @@ MonoBehaviour:
   pathMode: 1
   easeType: 1
   lockPosition: 0
-  lockRotation: 0
+  lockRotation: 2
   waypointRotation: 0
   rotationTarget: {fileID: 0}
 --- !u!136 &8526348429732423626
