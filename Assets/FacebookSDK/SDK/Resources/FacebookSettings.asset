@@ -16,9 +16,9 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 0
+  - 550209379259432
   appLabels:
-  - App Name
+  - EscapePlan
   cookie: 1
   logging: 1
   status: 1
