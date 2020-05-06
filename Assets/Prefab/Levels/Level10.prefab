@@ -5483,15 +5483,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4484632839828081113, guid: 39276fe9e8ae46d4cbe5919e58b04016,
-        type: 3}
-      propertyPath: InConfig.StartRotation.y
-      value: 180
-      objectReference: {fileID: 0}
     - target: {fileID: 4484632839828081110, guid: 39276fe9e8ae46d4cbe5919e58b04016,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484632839828081113, guid: 39276fe9e8ae46d4cbe5919e58b04016,
+        type: 3}
+      propertyPath: InConfig.StartRotation.y
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39276fe9e8ae46d4cbe5919e58b04016, type: 3}
@@ -5514,11 +5514,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5662,6 +5662,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4484632839828081110, guid: 39276fe9e8ae46d4cbe5919e58b04016,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4484632839828081113, guid: 39276fe9e8ae46d4cbe5919e58b04016,
         type: 3}
       propertyPath: InConfig.StartRotation.y
@@ -5671,11 +5676,6 @@ PrefabInstance:
         type: 3}
       propertyPath: TransitionInConfig.Duration
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484632839828081110, guid: 39276fe9e8ae46d4cbe5919e58b04016,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39276fe9e8ae46d4cbe5919e58b04016, type: 3}
@@ -5698,11 +5698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5787,11 +5787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af0c85230b7b42f458c5c21607714c93, type: 3}
       propertyPath: m_LocalPosition.x
