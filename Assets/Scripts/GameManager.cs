@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
     public GameObject Tutorial;
     public GameObject RedAlert;
     [Header("Level")]
+    public GameObject[] NormalLevels;
+
+    public GameObject[] HardLevels;
+
     public GameObject[] Levels;
     // Start is called before the first frame update
     int Level;
@@ -33,6 +37,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        string mode = PlayerPrefs.GetString("MODE");
+
+        if(mode == "EASY")
+        {
+            Levels = NormalLevels;
+        }
+        else
+        {
+            Levels = HardLevels;
+        }
         RedAlert.SetActive(false);
         TotalPrisoner = 0;
         isGameEnd = false;
@@ -89,7 +103,7 @@ public class GameManager : MonoBehaviour
         if (!isGameEnd)
         {
             //Adcontrol.instance.ShowInterstitial();
-            AdsManager.Instance.ShowInterstitialAd_FinishedGame();
+            //AdsManager.Instance.ShowInterstitialAd_FinishedGame();
             Level++;
             PlayerPrefs.SetInt("Level", Level);
             //GameWinUI.SetActive(true);

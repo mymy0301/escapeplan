@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public void Start()
     {
-        AdsManager.Instance.ShowInterstitialAd_FinishedGame();
+       // AdsManager.Instance.ShowInterstitialAd_FinishedGame();
     }
 
     public void StartGame()

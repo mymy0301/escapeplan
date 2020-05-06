@@ -11,7 +11,7 @@ public class MenuController : MonoBehaviour
     public RankPopup rankPopup;
     public Text LevelText;
     public Text NameText;
-    //public Button btnChangeName;
+    public Text ModeButton;
 
 
     public string RateURL, MoreURL;
@@ -30,6 +30,22 @@ public class MenuController : MonoBehaviour
         if (NameText != null)
         {
             NameText.text = "" + Config.GetUserName();
+        }
+
+        if(PlayerPrefs.GetString("MODE")== null)
+        {
+            PlayerPrefs.SetString("MODE", "EASY");
+        }
+        ModeButton.text = PlayerPrefs.GetString("MODE");
+        
+
+        if (PlayerPrefs.GetString("MODE") == "HARD")
+        {
+            isHard = true;
+        }
+        else
+        {
+            isHard = false;
         }
     }
 
@@ -50,9 +66,21 @@ public class MenuController : MonoBehaviour
     {
         
     }
-
+    bool isHard;
     public void StartGame() {
-        SceneManager.LoadScene("LoadGame");
+        if (isHard)
+        {
+            PlayerPrefs.SetString("MODE", "EASY");
+            isHard = !isHard;
+            ModeButton.text = "EASY";
+        }
+        else
+        {
+            PlayerPrefs.SetString("MODE", "HARD");
+            isHard = !isHard;
+            ModeButton.text = "HARD";
+        }
+        
     }
 
     public void GoToMenu()
