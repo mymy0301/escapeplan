@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class ItemButtonSelectLevel : MonoBehaviour
+using Facebook.Unity;
+
+public class LevelControl : MonoBehaviour
 {
     public Text txtLevel;
     public Text txtNextLevel;
@@ -21,14 +23,21 @@ public class ItemButtonSelectLevel : MonoBehaviour
         {
             level = PlayerPrefs.GetInt("Level");
             txtNextLevel.text = "" + (level + 1);
+            LogLevel_achievedEvent(level + 1, 0);
         }
             
     }
 
-    // Update is called once per frame
-    void Update()
+ 
+    public void LogLevel_achievedEvent(int level, double valToSum)
     {
-        
+        var parameters = new Dictionary<string, object>();
+        parameters["level"] = level;
+        FB.LogAppEvent(
+            "level_achieved",
+            (float)valToSum,
+            parameters
+        );
     }
 
 
@@ -46,9 +55,15 @@ public class ItemButtonSelectLevel : MonoBehaviour
         {
             SceneManager.LoadScene("LoadGame");
         }
+        else if (PlayerPrefs.GetString("MODE") == "EASY")
+        {
+            PlayerPrefs.SetString("MODE", "HARD");
+        }
         else
         {
             SceneManager.LoadScene("Menu");
+            PlayerPrefs.SetInt("Level", 1);
+            PlayerPrefs.SetString("MODE", "EASY");
         }
         
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Facebook.Unity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,18 @@ public class LoadScene : MonoBehaviour
 #endif
         Application.targetFrameRate = 60;
 
-        //PlayerPrefs.DeleteAll();
+        if (FB.IsInitialized)
+        {
+            FB.ActivateApp();
+        }
+        else
+        {
+            //Handle FB.Init
+            FB.Init(() => {
+                FB.ActivateApp();
+            });
+        }
+        PlayerPrefs.DeleteAll();
     }
 
     // Start is called before the first frame update
@@ -42,7 +54,26 @@ public class LoadScene : MonoBehaviour
         }
         asyncLoad.allowSceneActivation = true;
     }
-
+    void OnApplicationPause(bool pauseStatus)
+    {
+        // Check the pauseStatus to see if we are in the foreground
+        // or background
+        if (!pauseStatus)
+        {
+            //app resume
+            if (FB.IsInitialized)
+            {
+                FB.ActivateApp();
+            }
+            else
+            {
+                //Handle FB.Init
+                FB.Init(() => {
+                    FB.ActivateApp();
+                });
+            }
+        }
+    }
 
     public void SendTest1(){
         Debug.Log("SendTest1");

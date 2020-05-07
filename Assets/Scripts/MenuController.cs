@@ -32,21 +32,12 @@ public class MenuController : MonoBehaviour
             NameText.text = "" + Config.GetUserName();
         }
 
-        if(PlayerPrefs.GetString("MODE")== null)
+        if(PlayerPrefs.GetString("MODE") != "HARD")
         {
             PlayerPrefs.SetString("MODE", "EASY");
         }
-        ModeButton.text = PlayerPrefs.GetString("MODE");
-        
-
-        if (PlayerPrefs.GetString("MODE") == "HARD")
-        {
-            isHard = true;
-        }
-        else
-        {
-            isHard = false;
-        }
+      
+       
     }
 
 
@@ -66,21 +57,9 @@ public class MenuController : MonoBehaviour
     {
         
     }
-    bool isHard;
+    
     public void StartGame() {
-        if (isHard)
-        {
-            PlayerPrefs.SetString("MODE", "EASY");
-            isHard = !isHard;
-            ModeButton.text = "EASY";
-        }
-        else
-        {
-            PlayerPrefs.SetString("MODE", "HARD");
-            isHard = !isHard;
-            ModeButton.text = "HARD";
-        }
-        
+        SceneManager.LoadScene("LoadGame");        
     }
 
     public void GoToMenu()
