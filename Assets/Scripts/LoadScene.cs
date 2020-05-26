@@ -25,7 +25,7 @@ public class LoadScene : MonoBehaviour
                 FB.ActivateApp();
             });
         }
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
 #if !UNITY_EDITOR
         AppLovin.InitializeSdk();
 #endif

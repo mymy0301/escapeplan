@@ -23,6 +23,15 @@ public class LevelControl : MonoBehaviour
         {
             level = PlayerPrefs.GetInt("Level");
             txtNextLevel.text = "" + (level + 1);
+            if (AppLovin.HasPreloadedInterstitial())
+            {
+                // An ad is currently available, so show the interstitial.
+                AppLovin.ShowInterstitial();
+            }
+            else
+            {
+                // No ad is available.  Perform failover logic...
+            }
             LogLevel_achievedEvent(level + 1, 0);
         }
             

@@ -33,37 +33,7 @@ public class AdsManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-//#if UNITY_ANDROID
-//        UNITYADS_GAMEID = "3551869";
-//#elif UNITY_IPHONE
-//            UNITYADS_GAMEID = "";
-//#else
-//		    UNITYADS_GAMEID = "unexpected_platform";
-//#endif
-
-//#if UNITY_ANDROID
-//        ADMOB_GAMEID = "ca-app-pub-9740541809422718~2831142624";
-//#elif UNITY_IPHONE
-//        ADMOB_GAMEID = "";
-//#else
-//		    ADMOB_GAMEID = "unexpected_platform";
-//#endif
-//        Advertisement.Initialize(UNITYADS_GAMEID);
-        
-
-//        // Initialize the Google Mobile Ads SDK.
-//        MobileAds.Initialize(ADMOB_GAMEID);
-
-//        // Get singleton reward based video ad reference.
-//        rewardBasedVideo = RewardBasedVideoAd.Instance;
-
-//        // RewardBasedVideoAd is a singleton, so handlers should only be registered once.
-//        rewardBasedVideo.OnAdRewarded += Admob_HandleOnRewarded;
-//        rewardBasedVideo.OnAdClosed += Admob_HandleOnRewardedVideoAdClosed;
-
-//        LoadRewardedVideoAd();
-//        LoadInterstitialAd();
+        AppLovin.PreloadInterstitial();
     }
 
     // Update is called once per frame
