@@ -26,6 +26,9 @@ public class LoadScene : MonoBehaviour
             });
         }
         PlayerPrefs.DeleteAll();
+#if !UNITY_EDITOR
+        AppLovin.InitializeSdk();
+#endif
     }
 
     // Start is called before the first frame update
